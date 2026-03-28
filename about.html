@@ -4,64 +4,263 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Who We Are | Hope Alive SDA Church Bondo</title>
+  <meta name="description" content="Learn about Hope Alive SDA Church Bondo, our mission, vision, values, and the story behind our Christ-centered church community." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-  <header class="site-header inner-header">
-    <div class="topbar container">
-      <a class="brand" href="index.html"><span class="brand-mark">✦</span><div><strong>Hope Alive SDA Church</strong><small>Bondo</small></div></a>
-      <nav class="main-nav" id="mainNav">
-        <a href="about.html" class="active">Who We Are</a>
-        <a href="beliefs.html">What We Believe</a>
-        <a href="ministries.html">What We Do</a>
-        <a href="sermons.html">Study the Bible</a>
-        <a href="contact.html">Find Us</a>
-      </nav>
-      <button class="menu-btn" id="menuBtn">☰</button>
+
+<a class="skip-link" href="#mainContent">Skip to content</a>
+<header class="site-header">
+  <div class="top-strip">
+    <div class="container">
+      <div>Welcome to Hope Alive SDA Church Bondo — a place of worship, study, and hope.</div>
+      <div class="top-strip-links">
+        <a href="contact.html#times">Service Times</a>
+        <a href="sermons.html">Bible Study</a>
+        <a href="contact.html#visit">Plan a Visit</a>
+      </div>
     </div>
-  </header>
-  <section class="page-hero small-hero">
-    <div class="container reveal">
-      <p class="eyebrow">Who We Are</p>
-      <h1>A welcoming Adventist church rooted in Scripture and service.</h1>
+  </div>
+  <div class="container nav-shell">
+    <a class="brand" href="index.html" aria-label="Hope Alive SDA Church Bondo home">
+      <img src="assets/img/logo-mark.svg" alt="Hope Alive SDA Church Bondo logo" class="brand-mark" />
+      <div class="brand-copy">
+        <strong>Hope Alive SDA Church</strong>
+        <span>Bondo · Worship • Bible Study • Mission</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary navigation">
+      <div class="nav-item has-mega ">
+        <a href="index.html">Explore</a>
+        <div class="mega-menu glass">
+          <div class="mega-menu-inner">
+            <div class="mega-feature">
+              <p class="eyebrow" style="color:#dfefff;">Welcome</p>
+              <h3>Find your way around the church website.</h3>
+              <p>Quick access to worship, beliefs, ministries, Bible study, and your next visit.</p>
+              <div class="btn-row" style="margin-top:18px;">
+                <a class="btn btn-secondary" href="contact.html#visit">Plan a Visit</a>
+                <a class="btn btn-secondary" href="sermons.html">Start Studying</a>
+              </div>
+            </div>
+            <div class="mega-column">
+              <h4>Who We Are</h4>
+              <a class="mega-link" href="about.html"><strong>Church Story</strong><small>Mission, vision, values, and identity.</small></a>
+              <a class="mega-link" href="about.html#leadership"><strong>Leadership & Care</strong><small>How we support worship and discipleship.</small></a>
+              <a class="mega-link" href="contact.html#times"><strong>Service Times</strong><small>Sabbath worship and fellowship flow.</small></a>
+            </div>
+            <div class="mega-column">
+              <h4>Grow in Faith</h4>
+              <a class="mega-link" href="beliefs.html"><strong>Core Beliefs</strong><small>Biblical teachings that guide our faith.</small></a>
+              <a class="mega-link" href="sermons.html#study-guides"><strong>Study Guides</strong><small>Simple pathways to read and understand Scripture.</small></a>
+              <a class="mega-link" href="ministries.html#prayer"><strong>Prayer Life</strong><small>Prayer-centered church rhythms and fellowship.</small></a>
+            </div>
+            <div class="mega-column">
+              <h4>Serve & Connect</h4>
+              <a class="mega-link" href="ministries.html"><strong>Ministries</strong><small>Children, youth, families, music, and outreach.</small></a>
+              <a class="mega-link" href="ministries.html#outreach"><strong>Community Mission</strong><small>Practical service with spiritual impact.</small></a>
+              <a class="mega-link" href="contact.html"><strong>Contact Us</strong><small>Phone, WhatsApp, email, and location details.</small></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="nav-item active" href="about.html">Who We Are</a>
+      <a class="nav-item " href="beliefs.html">What We Believe</a>
+      <a class="nav-item " href="ministries.html">What We Do</a>
+      <a class="nav-item " href="sermons.html">Study the Bible</a>
+      <a class="nav-item " href="contact.html">Find Us</a>
+    </nav>
+
+    <label class="search-inline glass" aria-label="Search site">
+      <span>🔎</span>
+      <input id="desktopSearchInput" type="text" placeholder="Search ministries, Bible study, service times…" />
+      <kbd>Ctrl K</kbd>
+    </label>
+
+    <button class="search-toggle" id="searchToggle" aria-label="Open search">🔎</button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+  </div>
+</header>
+<div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+  <div class="mobile-panel">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+      <div>
+        <strong>Menu</strong>
+        <div class="badge-note">Hope Alive SDA Church Bondo</div>
+      </div>
+      <button class="menu-toggle" id="closeDrawer" style="display:grid;">✕</button>
+    </div>
+    <div class="mobile-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">Who We Are</a>
+      <a href="beliefs.html">What We Believe</a>
+      <a href="ministries.html">What We Do</a>
+      <a href="sermons.html">Study the Bible</a>
+      <a href="contact.html">Find Us</a>
+    </div>
+  </div>
+</div>
+<div class="search-modal" id="searchModal" aria-hidden="true">
+  <div class="search-modal-card">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px;">
+      <div>
+        <strong>Search the website</strong>
+        <div class="badge-note">Find pages, ministries, visit information, and study resources.</div>
+      </div>
+      <button class="menu-toggle" id="closeSearch" style="display:grid;">✕</button>
+    </div>
+    <label class="command-bar">
+      <span>🔎</span>
+      <input id="commandInput" type="text" placeholder="Type a keyword like beliefs, prayer, visit, youth, contact…" />
+    </label>
+    <div class="command-results" id="commandResults"></div>
+  </div>
+</div>
+
+<main id="mainContent">
+  <section class="page-hero">
+    <div class="container two-col">
+      <div class="hero-slab reveal">
+        <p class="eyebrow">Who We Are</p>
+        <h1 style="font-size:clamp(2.4rem,5vw,4.4rem);">A church family centered on Christ and committed to people.</h1>
+        <p>Hope Alive SDA Church Bondo exists to glorify God, uplift people through the Word, and build a caring spiritual community where worship, learning, and service flourish together.</p>
+        <div class="page-nav">
+          <a href="#mission">Mission</a>
+          <a href="#vision">Vision</a>
+          <a href="#leadership">Leadership</a>
+          <a href="#story">Our Story</a>
+        </div>
+      </div>
+      <div class="panel-list reveal delay-1">
+        <div class="info-card">
+          <span class="pill">Presentable Content Layout</span>
+          <h3>Text-first design that feels premium</h3>
+          <p>Every page uses stronger contrast, wider content panels, and comfortable spacing so your message remains easy to read on any screen.</p>
+        </div>
+        <div class="info-card">
+          <strong class="kpi">Mission + Care</strong>
+          <p>We worship deeply, study faithfully, serve practically, and welcome graciously.</p>
+        </div>
+      </div>
     </div>
   </section>
-  <section class="section">
-    <div class="container split-grid">
+
+  <section class="section" id="mission">
+    <div class="container two-col">
       <div class="reveal">
-        <h2>Our identity</h2>
-        <p>Hope Alive SDA Church Bondo is a local Seventh-day Adventist congregation dedicated to sharing the gospel, nurturing spiritual growth, and building a compassionate church family.</p>
-        <p>We are passionate about worship that honors God, Bible teaching that transforms lives, and mission that reaches people with practical love and eternal hope.</p>
+        <p class="eyebrow">Mission</p>
+        <h2>To help people know Jesus, understand Scripture, and live with hope.</h2>
+        <p>Our mission is to create a prayerful, Bible-rooted, mission-minded church environment where children, youth, adults, and visitors can grow in faith, character, and service. We want every person who walks in to feel seen, welcomed, and spiritually nourished.</p>
       </div>
-      <div class="info-panel reveal delay-1">
-        <h3>What defines us</h3>
+      <div class="info-card reveal delay-1">
+        <h3>What that looks like in practice</h3>
         <ul>
-          <li>Christ-centered worship</li>
-          <li>Biblical teaching</li>
-          <li>Sabbath fellowship</li>
-          <li>Prayerful community life</li>
-          <li>Compassionate outreach</li>
+          <li>Worship gatherings that are orderly, warm, and Christ-centered</li>
+          <li>Bible teaching that is understandable and spiritually grounded</li>
+          <li>Prayer rhythms that carry families, leaders, and members</li>
+          <li>Ministry spaces where people can belong and serve meaningfully</li>
         </ul>
       </div>
     </div>
   </section>
-  <section class="section light-bg">
-    <div class="container card-grid two">
-      <article class="info-card reveal">
-        <h3>Vision</h3>
-        <p>To be a vibrant church where people encounter Jesus, grow in faith, and become faithful witnesses in their homes, community, and the world.</p>
+
+  <section class="section light-section" id="vision">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Vision</p>
+          <h2>To be a vibrant church of faith, truth, compassion, and mission.</h2>
+        </div>
+        <p class="muted">We envision a church that shines with biblical clarity, worship excellence, strong fellowship, and meaningful impact in Bondo and beyond.</p>
+      </div>
+      <div class="stats-grid">
+        <div class="info-card reveal"><strong class="kpi">Biblical</strong><p>Grounded in Scripture and faithful teaching.</p></div>
+        <div class="info-card reveal delay-1"><strong class="kpi">Welcoming</strong><p>Open-hearted hospitality for members and guests.</p></div>
+        <div class="info-card reveal delay-2"><strong class="kpi">Prayerful</strong><p>Dependent on God in worship and daily life.</p></div>
+        <div class="info-card reveal delay-3"><strong class="kpi">Missional</strong><p>Serving others with practical love and gospel purpose.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="story">
+    <div class="container story-grid">
+      <article class="story-card reveal">
+        <p class="eyebrow">Our Story</p>
+        <h3>A local church with a bigger spiritual purpose.</h3>
+        <p>Hope Alive SDA Church Bondo is designed here as a modern digital home for your ministry presence — a place where your church story, activities, and spiritual identity can be presented with dignity, warmth, and excellence.</p>
       </article>
-      <article class="info-card reveal delay-1">
-        <h3>Mission</h3>
-        <p>To proclaim the everlasting gospel, disciple believers through Scripture and fellowship, and serve humanity with compassion and integrity.</p>
+      <article class="story-card reveal delay-1">
+        <p class="eyebrow">Our Values</p>
+        <h3>Truth, reverence, compassion, integrity, fellowship, and service.</h3>
+        <p>These values shape how we worship, teach, lead, and care for one another. They also guide how the website presents every message — clearly, respectfully, and attractively.</p>
       </article>
     </div>
   </section>
-  <footer class="site-footer"><div class="container footer-grid"><div><h3>Hope Alive SDA Church Bondo</h3><p>Faith. Fellowship. Mission.</p></div><div><h4>Explore</h4><a href="beliefs.html">Beliefs</a><a href="ministries.html">Ministries</a></div><div><h4>Connect</h4><a href="contact.html">Contact</a></div></div></footer>
-  <a class="whatsapp-float" href="https://wa.me/254700000000" target="_blank" rel="noopener">WhatsApp</a>
-  <script src="assets/js/main.js"></script>
+
+  <section class="section light-section" id="leadership">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Leadership & Care</p>
+          <h2>Guiding worship, discipleship, and community life with humility.</h2>
+        </div>
+        <p class="muted">Replace the placeholder content below with your actual church leadership, ministry heads, or departmental leaders.</p>
+      </div>
+      <div class="service-grid">
+        <div class="info-card reveal">
+          <span class="pill">Pastoral Care</span>
+          <h3>Spiritual guidance</h3>
+          <p>Preaching, counseling, visitation, and shepherding the church family with biblical care.</p>
+        </div>
+        <div class="info-card reveal delay-1">
+          <span class="pill">Eldership</span>
+          <h3>Worship support and nurture</h3>
+          <p>Helping maintain order, prayer support, member care, and faithfulness in church life.</p>
+        </div>
+        <div class="info-card reveal delay-2">
+          <span class="pill">Departments</span>
+          <h3>Coordinated ministry</h3>
+          <p>Children, youth, music, prayer, outreach, and family ministry working together in one mission.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Hope Alive SDA Church Bondo</h3>
+      <p>A Christ-centered Seventh-day Adventist church community committed to worship, discipleship, fellowship, and mission.</p>
+      <p class="badge-note">Replace placeholder phone, email, map, and media links with your official church details before publishing.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="about.html">Who We Are</a>
+      <a href="beliefs.html">What We Believe</a>
+      <a href="ministries.html">What We Do</a>
+    </div>
+    <div>
+      <h4>Grow</h4>
+      <a href="sermons.html">Study the Bible</a>
+      <a href="ministries.html#prayer">Prayer Fellowship</a>
+      <a href="contact.html#times">Service Times</a>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <a href="contact.html">Contact the Church</a>
+      <a href="https://wa.me/254700000000" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://www.youtube.com/" target="_blank" rel="noopener">Watch Online</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">© 2026 Hope Alive SDA Church Bondo. Designed for a polished, modern church web presence.</div>
+</footer>
+<a class="whatsapp-float" href="https://wa.me/254700000000" target="_blank" rel="noopener">WhatsApp Us</a>
+<script src="assets/js/main.js"></script>
+
 </body>
 </html>
